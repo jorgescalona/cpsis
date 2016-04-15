@@ -29,12 +29,12 @@ class cp_inventario(models.Model):
     _name = 'cp.inventario'
     _rec_name = 'codigo'
     codigo = fields.Char('codigo', size=10, required=True, help='codigo del equipo, consumible o herramienta')
-    marca_id = fields.Many2one('cp_marca', 'Marca', help='marca del equipo, consumible o herramienta')
+    marca_id = fields.Many2one('cp.marca', 'Marca', help='marca del equipo, consumible o herramienta')
     serial = fields.Char('serial', size=15, help='serial del equipo consumible o herramienta')
     parte = fields.Char('nro de parte', size=20, help='numero de parte del fabricante')
     descripcion = fields.Char('descripcion', size=200, help='descripción del item')
-    proveedor_id = fields.Many2one('cp_provee', 'Proveedor', help='carga al proveedor del equipo, consumible o material')
-    status_id = fields.Many2one('cp_status_bien', 'status', required=True, help='se puede referir a: en almacen, prestamo, en obra')
+    proveedor_id = fields.Many2one('cp.provee', 'Proveedor', help='carga al proveedor del equipo, consumible o material')
+    status_id = fields.Many2one('cp.status.bien', 'Status', required=True, help='se puede referir a: en almacen, prestamo, en obra')
     ubicacion = fields.Char('ubicacion', size=30, required=True, help='ubicación geográfica del equipo, consumible o herramienta')
     fecha_compra = fields.Datetime('fecha de compra', help='indica la fecha de compra del bien cosumible o herramienta')
 
@@ -42,21 +42,21 @@ class cp_inventario(models.Model):
 class cp_marca(models.Model):
     """guarda las marcas de los fabricantes de los bienes adquieridos por civil proyect"""
     _name = 'cp.marca'
-    #_rec_name = ''
+    _rec_name = 'marca'
     marca = fields.Char('marca', size=20, help='marca del fabricante del equipo, consumible o herramienta')
 
 
 class cp_status_bien(models.Model):
     """clase contenedora del estatus de los bienes de civil proyect"""
     _name = 'cp.status.bien'
-    #_rec_name = ''
+    _rec_name = 'status'
     status = fields.Char('status', size=20, required=True, help='almacena el status del equipo, consumible o bien de civil proyect')
 
 
 class cp_provee(models.Model):
     """agenda de proveedores de civil proyect"""
     _name = 'cp.provee'
-    _rec_name = 'estado_id'
+    _rec_name = 'proveedor'
     proveedor = fields.Char('proveedor', size=30, required=True, help='persona natural o jurídica ')
     direccion = fields.Char('direccion', size=150, help='direccion geografica del proveedor ')
     estado_id = fields.Many2one('estado', 'Estado', help='entidad federal donde se ubica el despacho del proveedor')
