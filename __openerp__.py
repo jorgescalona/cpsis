@@ -24,7 +24,7 @@
 ##############################################################################
 {
         "name" : "cpinv",
-        "version" : "0.1.1",
+        "version" : "0.1.2",
         "author" : "jorgescalona @jorgemustaine",
         "website" : "http://www.attakatara.wordpress.com",
         "category" : "Desconocida",
@@ -33,6 +33,6 @@
         "depends" : ['base', 'l10n_ve_dpt'],
         "init_xml" : [ ],
         "demo_xml" : [ ],
-        "update_xml" : ['views/cpinv_view.xml', 'security/ir.model.access.csv'],
+        "update_xml" : ['views/cpinv_view.xml', 'security/ir.model.access.csv','security/security.xml'],
         "installable": True
 }
