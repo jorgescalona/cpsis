@@ -1,15 +1,22 @@
-"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
-"access_cp_inventario","cp_inventario","model_cp_inventario","base.group_user",1,0,0,0
-"access_cp_marca","cp_marca","model_cp_marca","base.group_user",1,0,0,0
-"access_cp_status_bien","cp_status_bien","model_cp_status_bien","base.group_user",1,0,0,0
-"access_cp_provee","cp_provee","model_cp_provee","base.group_user",1,0,0,0
-"access_estado","estado","model_estado","base.group_user",1,0,0,0
-"access_municipio","municipio","model_municipio","base.group_user",1,0,0,0
-"access_parroquia","parroquia","model_parroquia","base.group_user",1,0,0,0
-"access_cp_inventario","cp_inventario","model_cp_inventario","base.group_user",1,0,0,0
-"access_cp_marca","cp_marca","model_cp_marca","base.group_user",1,0,0,0
-"access_cp_status_bien","cp_status_bien","model_cp_status_bien","base.group_user",1,0,0,0
-"access_cp_provee","cp_provee","model_cp_provee","base.group_user",1,0,0,0
-"access_estado","estado","model_estado","base.group_user",1,0,0,0
-"access_municipio","municipio","model_municipio","base.group_user",1,0,0,0
-"access_parroquia","parroquia","model_parroquia","base.group_user",1,0,0,0
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+cp_admin_provee,cp admin provee,model_cp_provee,group_cp_adm,1,1,1,1
+cp_admin_inventario,cp admin inventario,model_cp_inventario,group_cp_adm,1,1,1,1
+cp_admin_marca,cp admin marca,model_cp_marca,group_cp_adm,1,1,1,1
+cp_admin_status,cp admin status,model_cp_status_bien,group_cp_adm,1,1,1,1
+cp_admin_estado,cp admin estado,model_estado,group_cp_adm,1,1,1,1
+cp_admin_municipio,cp admin municipio,model_municipio,group_cp_adm,1,1,1,1
+cp_admin_parroquia,cp admin parroquia,model_parroquia,group_cp_adm,1,1,1,1
+cp_user_provee,cp user provee,model_cp_provee,group_cp_usr,1,0,0,0
+cp_user_inventario,cp user inventario,model_cp_inventario,group_cp_usr,1,0,0,0
+cp_user_marca,cp user marca,model_cp_marca,group_cp_usr,1,0,0,0
+cp_user_status,cp user status,model_cp_status_bien,group_cp_usr,1,0,0,0
+cp_user_estado,cp user estado,model_estado,group_cp_usr,1,0,0,0
+cp_user_municipio,cp user municipio,model_municipio,group_cp_usr,1,0,0,0
+cp_user_parroquia,cp user parroquia,model_parroquia,group_cp_usr,1,0,0,0
+cp_mantenimiento_provee,cp mantenimiento provee,model_cp_provee,group_cp_mnt,1,1,1,0
+cp_mantenimiento_inventario,cp mantenimiento inventario,model_cp_inventario,group_cp_mnt,1,1,1,0
+cp_mantenimiento_marca,cp mantenimiento marca,model_cp_marca,group_cp_mnt,1,1,1,0
+cp_mantenimiento_status,cp mantenimiento status,model_cp_status_bien,group_cp_mnt,1,1,1,0
+cp_mantenimiento_estado,cp mantenimiento estado,model_estado,group_cp_mnt,1,1,1,0
+cp_mantenimiento_municipio,cp mantenimiento municipio,model_municipio,group_cp_mnt,1,1,1,0
+cp_mantenimiento_parroquia,cp mantenimiento parroquia,model_parroquia,group_cp_mnt,1,1,1,0
