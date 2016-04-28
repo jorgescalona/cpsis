@@ -23,8 +23,8 @@
 #
 ##############################################################################
 {
-        "name" : "cpinv",
-        "version" : "0.1.2",
+        "name" : "cpsis seg+rep",
+        "version" : "0.1.3",
         "author" : "jorgescalona @jorgemustaine",
         "website" : "http://www.attakatara.wordpress.com",
         "category" : "Desconocida",

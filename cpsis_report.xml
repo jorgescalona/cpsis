@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report 
+            id="cpsis_inv"
+            model="cp.inventario"
+            name="cp.inventario"
+            string="Inventario"
+            report_type="qweb-pdf"
+            file="cpsis.report_cp_inv"
+            xml="cpsis/views/report_cp_inv.xml"
+        />
+    </data>
+</openerp>
+        
+      
