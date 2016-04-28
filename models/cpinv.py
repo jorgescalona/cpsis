@@ -56,7 +56,7 @@ class cp_status_bien(models.Model):
 class cp_provee(models.Model):
     """agenda de proveedores de civil proyect"""
     _name = 'cp.provee'
-    _rec_name = 'estado_id'
+    _rec_name = 'proveedor'
     proveedor = fields.Char('proveedor', size=30, required=True, help='persona natural o jurídica ')
     direccion = fields.Char('direccion', size=150, help='direccion geografica del proveedor ')
     estado_id = fields.Many2one('estado', 'Estado', help='entidad federal donde se ubica el despacho del proveedor')
