@@ -57,8 +57,8 @@
                             <td class="text-right"><span t-att-style="style" t-esc="taxline['credit']"/></td>
                             <td class="text-right">
                                 <span t-att-style="style" t-esc="formatLang(taxline['tax_amount'], currency_obj=res_company.currency_id)"/>
-                            </td> -->
-                        </tr>
+                            </td> 
+                        </tr> -->
                     </tbody>
                 </table>
             </div>
@@ -68,7 +68,7 @@
 <template id="report_cp_inv">
     <t t-call="report.html_container">
         <t t-foreach="doc_ids" t-as="doc_id">
-            <t t-raw="translate_doc(doc_id, doc_model, 'partner_id.lang', 'cpinv.report_cp_inv_document')"/>
+            <t t-raw="translate_doc(doc_id, doc_model, 'partner_id.lang', 'cpsis.report_cp_inv_document')"/>
         </t>
     </t>
 </template>

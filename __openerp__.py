@@ -34,5 +34,6 @@
         "init_xml" : [ ],
         "demo_xml" : [ ],
         "update_xml" : ['views/cpinv_view.xml', 'security/ir.model.access.csv','security/security.xml'],
+        'data': ['views/report_cp_inv.xml'],
         "installable": True
 }

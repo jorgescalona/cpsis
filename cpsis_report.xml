@@ -2,13 +2,14 @@
 <openerp>
     <data>
         <report 
-            id="cpsis_inv"
+            id="custom_report_cpsis_inv"
             model="cp.inventario"
-            name="cp.inventario"
+            name="cpsis.report_cp_inv"
             string="Inventario"
             report_type="qweb-pdf"
             file="cpsis.report_cp_inv"
             xml="cpsis/views/report_cp_inv.xml"
+            attachment_use="False"
         />
     </data>
 </openerp>
